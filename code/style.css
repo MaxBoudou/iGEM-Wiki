@@ -4,13 +4,11 @@ html, body{
 }
 
 .navbar {
-  font-weight: 300; }
+  font-weight: 500; }
   .navbar .navbar-nav .nav-item {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
      }
- .navbar .navbar-nav .nav-item .nav-link{
-  color: #FF4D41;
- }
+ 
 
 
 
@@ -45,8 +43,4 @@ html, body{
   opacity: 0.5;
 }
 
-.intro{
-  position: absolute;
-  
-}
 /*# sourceMappingURL=style.css.map */
