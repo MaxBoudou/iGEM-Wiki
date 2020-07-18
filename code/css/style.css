@@ -3,29 +3,44 @@ html, body{
   padding:0;
 }
 
-.navbar {
-  font-weight: 500; }
-  .navbar .navbar-nav .nav-item {
-    font-size: 1.5rem;
-     }
- 
-
-
-
-.header {
+#navigation{
+  position: fixed;
+  top: -100px;
   width: 100%;
-  height: 800px; 
+  display: block;
+  transition: top 0.3s;
+  z-index: 4;
+
+}
+.navbar {
+    background-color: rgba(253,253,253,0.50);
+
+  }
+
+.navbar .collapse .navbar-nav .nav-item .dropdown-menu>a:hover{
+  background-color: rgba(253,253,253,0.50);
+
+}
+.navbar .collapse .navbar-nav .nav-item .dropdown-menu{
+  background-color: #F44336;
+  margin-top: 0;
+}
+
+.navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+  font-size: 20px;
+
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link{
+  font-size: 20px;
+  margin:5px;
   
 }
-.header .A{
-  float: right;
-  margin-top: 30rem;
+
+.dropdown:hover .dropdown-menu{
+  display:block;
 }
 
-.header .B{
-  float: right;
-  margin-top: 4rem;
-}
 
 
 .sponsor .fas:hover{

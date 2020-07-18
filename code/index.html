@@ -6,41 +6,30 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ce3606dabd.js" crossorigin="anonymous"></script>
-    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    <title>IGEM IONIS</title>
     
 </head>
 
 
 <body>
     
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" id="hautPage">
-        <a class="navbar-brand mb-0 ml-4 mt-0" href="#">
-            <img src="img/Logo_IONIS.png" width="150" height="80" alt="">
-          </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#main_navbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="main_navbar">
-                <ul class="navbar-nav ml-auto mr-5">
-                    <li class="nav-item"><a href="#" class="nav-link">PROJECT</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">IN THE LAB </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">SIDE-PROJECT</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">RESULTS</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">HUMAN PRACTICES</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">SAFETY</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">TEAM</a></li>
-                </ul>
-            </div>
-    </nav>
+   <div id="navigation" data-include="navbar"></div>
 
-    <section class="intro1 d-flex justify-content-center align-items-center" style="background-color: #F44336; width: 100%; position: relative; min-height: 600px;">
+    <section class="intro1 d-flex justify-content-center align-items-center" style="background-color: #F44336; width: 100%;  min-height: 600px; z-index: 2;">
        <img src="img/laboGIF.gif" style="position: relative; left: 700px; margin-top: 150px; margin-bottom: auto;">
        <div class="text1" style="position: relative; right:910px; margin-bottom: auto; margin-top: auto;">
         <p style="font-size: 6rem; color:white;">Let us </br> introduce you...</p>
        </div>
     </section>
 
-    <section class="intro2" style="width: 100%; position: relative; height: 800px;">
+    <section class="intro2" style="width: 100%; position: relative; height: 800px; z-index: 2;">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
   <path fill="#F44336" fill-opacity="1" d="M0,224L16,229.3C32,235,64,245,96,250.7C128,256,160,256,192,224C224,192,256,128,288,128C320,128,352,192,384,218.7C416,245,448,235,480,213.3C512,192,544,160,576,149.3C608,139,640,149,672,133.3C704,117,736,75,768,85.3C800,96,832,160,864,202.7C896,245,928,267,960,245.3C992,224,1024,160,1056,133.3C1088,107,1120,117,1152,117.3C1184,117,1216,107,1248,128C1280,149,1312,203,1344,213.3C1376,224,1408,192,1424,176L1440,160L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z"></path>
 </svg>
@@ -50,22 +39,22 @@
        </div>
     </section>
 
-
-    <section class="Ecoli1  d-flex justify-content-center align-items-center" style="width: 100%; position: relative; height: 600px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2ECC71" fill-opacity="1" d="M0,128L21.8,112C43.6,96,87,64,131,80C174.5,96,218,160,262,181.3C305.5,203,349,181,393,181.3C436.4,181,480,203,524,208C567.3,213,611,203,655,181.3C698.2,160,742,128,785,122.7C829.1,117,873,139,916,160C960,181,1004,203,1047,197.3C1090.9,192,1135,160,1178,170.7C1221.8,181,1265,235,1309,224C1352.7,213,1396,139,1418,101.3L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
+    <section class="Ecoli1  d-flex justify-content-center align-items-center" style="background-color: #2ECC71; width: 100%; position: relative; height: 600px; z-index: 2;">
       <img src="img/Ecoli1.png" style="position: relative; right:100px">
       <div class="text3" style="position: relative; left:100px">
         <p style="font-size: 2.6rem; color: #17202A;">Today more and more bacteria develop antimicrobial resistance...</p>
        </div>
     </section>
 
-    <section class="Personnage  d-flex justify-content-center align-items-center" style="width: 100%; position: relative; height: 600px;">
+    <section class="Personnage  d-flex justify-content-center align-items-center" style="background-color:#F1C40F;width: 100%; position: relative; height: 600px; z-index: 2;">
       <img src="img/personnage.png" style="position: relative; left:1240px">
       <div class="text3" style="position: relative; right:500px">
         <p style="font-size: 2.6rem; color: #17202A;">Because of  the overuse ,</br>the antibiotic loses its ability to treatthe bacterial infection.</p>
        </div>
     </section>
 
-    <section class="Medoc  d-flex justify-content-center align-items-center" style="width: 100%; position: relative; height: 600px;">
+    <section class="Medoc  d-flex justify-content-center align-items-center" style="background-color:#3498DB;width: 100%; position: relative; height: 600px; z-index: 2;">
       <img src="img/medoc.png" style="position: relative; right:140px">
       <div class="text3" style="position: relative; left:100px">
         <p style="font-size: 2.6rem; color: #17202A;">No new family of antibiotics has been commercialized.</br>Today antibiotics are considered as one of the biggest </br> therapeutic advances of the 20thcentury.</p>
@@ -73,97 +62,16 @@
     </section>
 
 
-     <section class="Planete  d-flex justify-content-center align-items-center" style="width: 100%; position: relative; height: 600px; z-index: 6;">
+     <section class="Planete  d-flex justify-content-center align-items-center" style="background-color:#A569BD; width: 100%; position: relative; height: 600px; z-index: 2;">
       <img src="img/planete.png" style="position: relative; left:1400px;">
       <div class="text3" style="position: relative; right:500px">
         <p style="font-size: 2.6rem; color: #17202A;">10 million deaths could occur annually by 2050,  according to the World Health Organization, if effective intervention methods against antimicrobial resistance are not made.</p>
        </div>
     </section>
-
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: relative;" >
-  <path fill="#F44336" fill-opacity="1" d="M0,192L21.8,170.7C43.6,149,87,107,131,101.3C174.5,96,218,128,262,122.7C305.5,117,349,75,393,85.3C436.4,96,480,160,524,186.7C567.3,213,611,203,655,176C698.2,149,742,107,785,85.3C829.1,64,873,64,916,85.3C960,107,1004,149,1047,154.7C1090.9,160,1135,128,1178,122.7C1221.8,117,1265,139,1309,138.7C1352.7,139,1396,117,1418,106.7L1440,96L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path>
-</svg>
-
-<section class="Ecoli2 d-flex justify-content-center align-items-center" style="background-color: #F44336; width: 100%; position: relative; height: 680px;">
-    <div class="text3" style="position: absolute; top: 10px;">
-        <p style="font-size: 3rem; color: white;">To face this major health issue, we conceived the project BacTail...</p>
-        <p style="font-size: 2.6rem; color: white;  text-align: center;"> STEP 1</p>
-    </div>
-     <img src="img/Ecoli2.png" style="position: absolute; top:150px;">
-      <div class="text3" style="position: absolute; bottom:10px;">
-        <p style="font-size: 2.6rem; color: white;">Manage to insert and direct bacteriophage T4 LTFs into E.coli’s outer membranes.</p>
-    </div>
-</section>
-
-<section class="Ecoli3" style="width: 100%; position: relative; height: 800px;">
-   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#F44336" fill-opacity="1" d="M0,160L21.8,149.3C43.6,139,87,117,131,96C174.5,75,218,53,262,69.3C305.5,85,349,139,393,138.7C436.4,139,480,85,524,101.3C567.3,117,611,203,655,202.7C698.2,203,742,117,785,90.7C829.1,64,873,96,916,106.7C960,117,1004,107,1047,128C1090.9,149,1135,203,1178,192C1221.8,181,1265,107,1309,85.3C1352.7,64,1396,96,1418,112L1440,128L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path>
-</svg>
-</section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A569BD" fill-opacity="1" d="M0,256L21.8,218.7C43.6,181,87,107,131,69.3C174.5,32,218,32,262,58.7C305.5,85,349,139,393,165.3C436.4,192,480,192,524,176C567.3,160,611,128,655,101.3C698.2,75,742,53,785,42.7C829.1,32,873,32,916,37.3C960,43,1004,53,1047,85.3C1090.9,117,1135,171,1178,165.3C1221.8,160,1265,96,1309,85.3C1352.7,75,1396,117,1418,138.7L1440,160L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>
 
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#F44336" fill-opacity="1" d="M0,192L24,186.7C48,181,96,171,144,154.7C192,139,240,117,288,101.3C336,85,384,75,432,85.3C480,96,528,128,576,144C624,160,672,160,720,154.7C768,149,816,139,864,144C912,149,960,171,1008,165.3C1056,160,1104,128,1152,106.7C1200,85,1248,75,1296,90.7C1344,107,1392,149,1416,170.7L1440,192L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
-</svg>
-    <section class="sponsor py-5 text-dark" style="background-color: #F44336;">
-      <div class="container text-center" style="position: relative; bottom: 100px;">
-          <a id="retourHaut" href="#hautPage"><i class="fas fa-arrow-circle-up fa-3x" style="color:white;"></i></a>
-          <h4 class="display-4 mb-4" style="color: white;">SPONSORS AND PARTNERS</h4>
-      </div>
-    </section>
 
-    <section class="contact py-5 text-white justify-content-center bg-dnager" style="background-color: #F44336;">
-        <div class="row">
-            <div class="col-7 text-center">
-                <h4 class="display-6 mb-5">IGEM IONIS</h4>
-                <p>We're a group of six different schools from the IONIS Education Group.<br>
-                   For this competition we wanted to take advantage of the multiple schools<br>
-                   and fields of activity given by the IONIS education group to create a solid project.<br>
-                   <a class="link" href="https://igemionis.com/equipe-igem-ionis-2020/">Read more</a>
-                </p>
-                </div>
-            <div class="col-4 text-center">
-                <h4 class="display-6 mb-5">STAY IN TOUCH</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Location: 66 Rue Guy Môquet, 94800<br> Villejuif, France</p>
-                  <br>
-                <p><i class="fas fa-envelope"></i> email: igem.ionis@gmail.com</p>
-            </div>
-       </div>
-    </section>
-
-
-    <footer class="footer py-2  justify-content-center bg-dark ">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-7">
-              <p class="text-white ">&copy;IONIS_IGEM_2020.</p>
-          </div>
-          <div class="col-4">
-              <ul class="nav">
-                  <li class="nav-item">
-                      <a href="https://www.facebook.com/ionisigem" class="nav-link">
-                        <i class="fab fa-facebook fa-2x" style="color:#2196F3"></i>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="https://www.instagram.com/igem.ionis/?hl=fr" class="nav-link">     
-                        <i class="fab fa-instagram fa-2x" style="color:#FF5722"></i>      
-                      </a>
-                </li>
-                <li class="nav-item">
-                     <a href="https://www.linkedin.com/company/igem-ionis/" class="nav-link">
-                        <i class="fab fa-linkedin fa-2x" style="color:#00BCD4;"></i>
-                     </a>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/retourHaut.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="js/scrollreveal.js"></script>
+<div data-include="bas_page"></div>
 </body>
 </html>
