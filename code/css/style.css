@@ -98,9 +98,8 @@ nav .dropdown-toggle::after {
 /*  -------- Index Carousel ------- */
 
 .carousel {
-  height: 800px;
+  height: 650px;
 }
-
 
 
 .carousel-indicators {

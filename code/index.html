@@ -30,7 +30,7 @@
 	<!--   //////////  CAROUSEL  /////////// -->
 
 	<!-- carousel code -->
-  <div id="carouselExampleIndicators" class="carousel slide">
+  <div id="carouselExampleIndicators" class="carousel slide" style="margin-top: 50px;">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -40,17 +40,23 @@
     </ol>
     <div class="carousel-inner">
 
+<!--<style type="text/css">
+  .animate__fadeIn {
+    --animation-delay: 4s;
+    --animate-duration: 2s;
+  }
+</style>-->
+
       <!-- First slide -->
       <div class="carousel-item active">
         <div class="carousel-caption d-md-block">
-          <div class="row">
+          <div class="row" style="align-items: baseline;">
           	<div class="col-md-6" data-animation="animated bounceInLeft">
-          		<h2 style="font-family: RalewayMedium;color: white;font-size: 4rem;text-align: left;padding-top: 900px;">Handling Antibiotic resistance with care !</h2>
-              <p> Welcome to Bactail...</p>
+          		<h2 style="font-family: RalewayMedium; color: white; font-size: 3rem; text-align: justify;" class="animate__animated animate__fadeInLeft">Handling Antibiotic <br>resistance with care !</h2>
           	</div>
-          	<div class="col-md-6" data-animation="animated bounceInRight">
-          		<figure>
-          			<img style="width:400px; padding-top: 800px;" src="img/LogoF_CLR_Noir.png">
+          	<div class="col-md-6 animate__animated animate__fadeIn animate__delay-2" data-animation="animated bounceInRight" style="padding-top: 100px;--animation-duration: 2s;">
+          		<figure style="height: 500px;padding-top: 100px;">
+          			<img  class="" style="width:400px; display:inline-block;" src="img/LogoF_CLR_Noir.png">
           		</figure>
           	</div>
           </div>
@@ -59,18 +65,18 @@
 
       <!-- Second slide -->
       <div class="carousel-item">
-        <div class="carousel-caption d-md-block">
+        <div class="carousel-caption d-md-block" style="display: flex; flex-direction: column; align-items: flex-start;">
            <div style="display: flex;justify-content: space-between;">
-              <img src="SVG/bacteriophage.svg" height="200px" width="200px" style="float: left;margin-right: 50px;">
-            <h5 style="padding-top:5%;text-align: justify;">10 million deaths could occur annually by 2050, according to the World Health Organization, if effective intervention methods against antimicrobial resistance are not made.</h5>
+              <img src="SVG/bacteriophage.svg" height="250px" width="250px" class="animate__animated animate__fadeIn animate__delay-2s" style="float: left;margin-right: 50px;--animate-duration:3s;" >
+              <h4 class="animate__animated animate__fadeInDown animate__delay-2s" style="padding-top:5%;text-align: justify;--animate-duration:1s">Infections caused by antibiotic-resistant germs are difficult, and sometimes impossible, to treat. In most cases, antibiotic-resistant infections require extended hospital stays, additional follow-up doctor visits, and costly and toxic alternatives.</h4>
+            </div>
+          <div style="display: flex;justify-content: space-between;">
+            
+            <h4 class="animate__animated animate__fadeInUp" style="padding-top: 5%;text-align: justify;--animate-duration:2s;--animate-delay:5s;">No new family of antibiotics has been commercialized.
+        Today antibiotics are considered as one of the biggest
+        therapeutic advances of the 20th century.</h4>
+          <img  class="animate__animated animate__fadeIn" src="SVG/medoc.svg" height="150px" style="float:right;margin-left: 50px;--animate-duration:4s;">
           </div>
-          <h3 class="icon-container" data-animation="animated bounceInDown">
-            <span class="fa fa-heart"></span>
-          </h3>
-          <h3 data-animation="animated bounceInUp">
-            Caption for slide 2
-          </h3>
-          <button class="btn" data-animation="animated zoomInRight" style="border: 2px solid white; color: white;">About our project</button>
         </div>
       </div>
 
@@ -78,15 +84,15 @@
       <div class="carousel-item">
         <div class="carousel-caption d-md-block">
           <div style="display: flex;justify-content: space-between;">
-          		<img src="SVG/planete.svg" height="200px" width="200px" style="float: left;margin-right: 50px;">
-          	<h5 style="padding-top:5%;text-align: justify;">10 million deaths could occur annually by 2050, according to the World Health Organization, if effective intervention methods against antimicrobial resistance are not made.</h5>
+          		<img src="SVG/planete.svg" height="200px" width="200px"  class="animate__animated animate__fadeIn animate__delay-2s" style="float: left;margin-right: 50px;--animate-duration:3s;" >
+          	<h4 class="animate__animated animate__fadeInDown animate__delay-2s" style="padding-top:5%;text-align: justify;--animate-duration:1s">10 million deaths could occur annually by 2050, according to the World Health Organization, if effective intervention methods against antimicrobial resistance are not made.</h4>
           </div>
-          <div style="display: flex;justify-content: space-between;">
-          	
-          	<h5 style="padding-top: 5%;text-align: justify;">No new family of antibiotics has been commercialized.
-				Today antibiotics are considered as one of the biggest
-				therapeutic advances of the 20th century.</h5>
-      		<img src="SVG/medoc.svg" height="150px" style="float:right;margin-left: 50px;">
+          <div style="display: flex;justify-content: space-around;">
+            
+            <h4  class="animate__animated animate__fadeInUp" style="padding-top: 5%;text-align: justify;--animate-duration:2s;--animate-delay:5s;">
+Today more and more bacterias develop antimicrobial resistance...Where antibiotics can be bought for human or animal use without a prescription, the emergence and spread of resistance is made worse. Similarly, in countries without standard treatment guidelines, antibiotics are often over-prescribed by health workers and veterinarians and over-used by the public.
+</h4>
+  <img class="animate__animated animate__fadeIn" src="SVG/medoc.svg" src="SVG/Ecoli1.svg" height="200px" width="200px" style="float:right;margin-left: 50px;--animate-duration:4s;" >
           </div>
         </div>
       </div>
@@ -95,17 +101,20 @@
       <div class="carousel-item">
         <div class="carousel-caption d-md-block">
           <div style="display: flex;justify-content: space-around;">
-          		<img src="SVG/Ecoli1.svg" height="200px" width="200px" style="float: left;margin-right: 50px;">
-          	<h5 style="padding-top:5%;text-align: justify;">
-Today more and more bacterias develop antimicrobial resistance...
+          		<img class="animate__animated animate__fadeIn" src="SVG/bacteriophage.svg" height="400px" width="400px" style="float: left;margin-right: 50px;--animation-duration: 5s;">
+          	<div><h5 class="animate__animated animate__slideInRight" style="padding-top:5%;text-align: justify;--animation-duration: 2s;">
+That's why we, the Bactail Team, are actively battling against this matter. By using the components of bacteriophages, we could solve the matter of antiobiotic resistance. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </h5>
+<button class="btn animate__animated animate__fadeInUp" style="display:inline-block;margin-top: 50px; border : solid 2px white; color: white; font-size: 1.4em;--animation-duration: 1s;">
+  Learn more about our project
+</button></div>
           </div>
-          <div style="display: flex;justify-content: space-between;">
-          	
-          	<h5 style="padding-top: 5%;text-align: justify;">Because of the drug overuse,
-the antibiotic loses its ability to treathen the bacterial infection.</h5>
-      		<img src="SVG/perso.svg" height="180px" style="float:right;margin-left: 50px;">
-          </div>
+          
         </div>
       </div>
 
