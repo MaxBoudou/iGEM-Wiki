@@ -26,7 +26,7 @@ html, body{
 }
 
 #wrapper {
-  background-image: url("../img/background.png");
+  background-color: white;
   min-height : 1200px;
   background-repeat: repeat-y;
 }
@@ -72,7 +72,7 @@ nav {
 }
 
 nav .dropdown-toggle::after {
-  display: none;
+  
 }
 
 .link{
