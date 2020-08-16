@@ -23,9 +23,30 @@
 
 <body>
 	
-<div id="wrapper">
-   	
-	<div data-include="navbar"></div>
+
+  <div class="top-page" style="background-color:#FFF7ED; border-radius: 50px 50px 50px 50px; height:70%; margin: 1% 1% 0% 1%; padding:1% 0 5% 0;">
+    <div data-include="navbar"></div>
+    <div class="row" style="align-items: baseline;">
+            <div class="col-md-6 animate__animated animate__fadeIn animate__delay-2s">
+              <div class="animated-title">
+                  <div class="text-top">
+                      <div>
+                        <span>Handle</span>
+                        <span>antibiotics</span>
+                      </div>
+                  </div>
+              <div class="text-bottom">
+    <div>with care <img src="SVG/antibiotic.svg" height="100px" width="100px" style="transform: rotate(45deg);"></div>
+  </div>
+</div>
+            </div>
+            <div class="col-md-6" style="padding-top:20px;">
+              <figure style="height:400px; margin-left:280px; margin-bottom: 90px;">
+                <img  class="animate__animated animate__fadeInRight animate__delay-2s" style="width:400px; display:inline-block;--animate-duration:1s;" src="img/LogoF_CLR_Noir.png">
+              </figure>
+            </div>
+          </div>
+  </div>
 
 	<!--   //////////  CAROUSEL  /////////// -->
 
@@ -49,19 +70,10 @@
 
       <!-- First slide -->
       <div class="carousel-item active">
-        <div class="carousel-caption d-md-block">
-          <div class="row" style="align-items: baseline;">
-          	<div class="col-md-6" data-animation="animated bounceInLeft">
-          		<h2 style="font-family: RalewayMedium; color: #292927; font-size: 3rem; text-align: justify;" class="animate__animated animate__fadeInLeft">Handling Antibiotic <br>resistance with care !</h2>
-          	</div>
-          	<div class="col-md-6 animate__animated animate__fadeIn animate__delay-2" data-animation="animated bounceInRight" style="padding-top: 100px;--animation-duration: 2s;">
-          		<figure style="height: 500px;padding-top: 100px;">
-          			<img  class="" style="width:400px; display:inline-block;" src="img/LogoF_CLR_Noir.png">
-          		</figure>
-          	</div>
-          </div>
-        </div>
+        <div class="carousel-caption d-md-block" style="display: flex; flex-direction: column; align-items: flex-start;">
+             
       </div>
+    </div>
 
       <!-- Second slide -->
       <div class="carousel-item">
@@ -84,7 +96,7 @@
       <div class="carousel-item">
         <div class="carousel-caption d-md-block">
           <div style="display: flex;justify-content: space-between;">
-          		<img src="SVG/planete.svg" height="200px" width="200px"  class="animate__animated animate__fadeIn animate__delay-2s" style="float: left;margin-right: 50px;--animate-duration:3s;" >
+          		<img src="SVG/planete.svg" height="300px" width="300px"  class="animate__animated animate__fadeIn animate__delay-2s" style="float: left;margin-right: 50px;--animate-duration:3s; margin-top: 60px;" >
           	<h4 class="animate__animated animate__fadeInDown animate__delay-2s" style="padding-top:5%;text-align: justify;--animate-duration:1s">10 million deaths could occur annually by 2050, according to the World Health Organization, if effective intervention methods against antimicrobial resistance are not made.</h4>
           </div>
           <div style="display: flex;justify-content: space-around;">
@@ -144,20 +156,46 @@ src="https://www.youtube.com/embed/rgRXQ8SwcUE">
 	    <span class="sr-only">Next</span>
   	</a>
   </div>
-  <br><br>
-  <div id="upper-footer" class="row">
 
-  	<div class="col-md-4" style="border-right:2px solid #292927; height:350px; color: #292927;">
-  		<h3>Igem Ionis</h3>
-  		<p>We're a group of six different schools from the IONIS Education Group.<br>
-         For this competition we wanted to take advantage of the multiple schools<br>
-         and fields of activity given by the IONIS education group to create a solid project.<br>
-      <a class="link" href="https://igemionis.com/equipe-igem-ionis-2020/">Read more...</a></p>
+  
+
+
+  <div class="end-page">
+  	<div class="col-md-4" style="color: white;">
+      <div class="card" style="width:100%; background-color: rgba(32, 32, 30, 0.9); border-radius: 50px;">
+           <div class="card-body">
+             <h5 class="card-title">Igem Ionis</h5>
+  		       <p class="card-text">
+              We're a group of six different schools from the IONIS Education Group.<br>
+              For this competition we wanted to take advantage of the multiple schools<br>
+              and fields of activity given by the IONIS education group to create a solid project.<br>
+             <a class="link" href="https://igemionis.com/equipe-igem-ionis-2020/">Read more...</a></p>
       <p><i class="fas fa-map-marker-alt"></i> Location: 66 Rue Guy Môquet, 94800<br> Villejuif, France</p>
       <p><i class="fas fa-envelope"></i> email: igem.ionis@gmail.com</p>
+      <ul class="nav">
+                  <li class="nav-item">
+                      <a href="https://www.facebook.com/ionisigem" class="nav-link">
+                        <i class="fab fa-facebook fa-2x" style="color:#2196F3"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="https://www.instagram.com/igem.ionis/?hl=fr" class="nav-link">     
+                        <i class="fab fa-instagram fa-2x" style="color:#FF5722"></i>      
+                      </a>
+                </li>
+                <li class="nav-item">
+                     <a href="https://www.linkedin.com/company/igem-ionis/" class="nav-link">
+                        <i class="fab fa-linkedin fa-2x" style="color:#00BCD4;"></i>
+                     </a>
+                </li>
+              </ul>
   	</div>
-  	<div class="col-md-8" style="color:#292927;">
-  		<h3>Sponsors</h3>
+  </div>
+</div>
+  	<div class="col-md-8" style="color: white;">
+      <div class="card" style="width:100%; background-color: rgba(32, 32, 30, 0.9); border-radius: 50px;">
+  		<div class="card-body">
+      <h5 class="card-title">Sponsors</h5>
   		<div>
   			<figure class="sponsors-block sponsors-height">
   				<img src="img/supbiotech_igem.png" style="height: 120px;"><img src="img/esme_sudria_igem.png"><img src="img/geneious_igem.png">
@@ -169,13 +207,14 @@ src="https://www.youtube.com/embed/rgRXQ8SwcUE">
   				<img src="img/benchling_igem.png"><img src="img/phages_igem.png"><img src="img/labiotech_igem.png">
   			</figure>
   		</div>
+    </div>
   	</div>
   	
   </div>
 
 
 
-</div>
-<div data-include="footer"></div>
+
+
 
 </body>
