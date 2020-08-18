@@ -199,10 +199,10 @@ nav .dropdown-toggle::after {
   font-family: RalewaySemiBold;
   height: 90vmin;
   position: absolute;
-  left:70vmin;
-  top:5vmin;
+  left:35vmin;
+  top:15vmin;
   transform: translate(-50%, -50%);
-  width: 90vmin;
+  width: 100vmin;
 
 }
 .animated-title > div {
@@ -212,7 +212,7 @@ nav .dropdown-toggle::after {
   width: 100%;
 }
 .animated-title > div div {
-  font-size: 11vmin;
+  font-size: 17vmin;
   position: absolute;
 }
 .animated-title > div div span {
@@ -221,7 +221,7 @@ nav .dropdown-toggle::after {
 }
 .animated-title > div.text-top {
   border-bottom: 1vmin solid #292927;
-  width: 70%;
+  width: 90%;
  }
 
 .animated-title > div.text-top div {
@@ -243,70 +243,9 @@ nav .dropdown-toggle::after {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
-  top: 0;
+  top:0;
   transform: translate(0, -100%);
 }
-
-
-
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-  }
-
-
-.team{
-  width:100%; 
-  background-color:#F2E7DC; 
-  border-radius: 0 0 50px 50px; 
-  height: 600px;
-  text-align: center;
-}
-
-.team:before{
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    height: 100%;
-}
-
-
-h1 {
-  display: inline-block;
-  color: #292927;
-  font-family: 'RalewaySemiBold', sans-serif;
-  font-size: 20em; 
-  text-shadow: .03em .03em 0 #F2E7DC;
-  }
-  h1:after {
-    content: attr(data-shadow);
-    position: absolute;
-    top: .06em; left: .06em;
-    z-index: -1;
-    text-shadow: none;
-    background-image:
-      linear-gradient(
-        45deg,
-        transparent 45%,
-        #292927 45%,
-        #292927 55%,
-        transparent 0
-        );
-    background-size: .05em .05em;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
-    animation: shad-anim 15s linear infinite;
-    }
-
-@keyframes shad-anim {
-  0% {background-position: 0 0}
-  0% {background-position: 100% -100%}
-  }
-
 
   #buttonBac{
     text-decoration:none;  
