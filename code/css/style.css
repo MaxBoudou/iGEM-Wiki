@@ -23,7 +23,7 @@ html, body{
   margin:0;
   padding:0;
  
-
+  scroll-behavior: smooth;
 }
 
 
@@ -200,9 +200,9 @@ nav .dropdown-toggle::after {
   height: 90vmin;
   position: absolute;
   left:35vmin;
-  top:15vmin;
+  top:10vmin;
   transform: translate(-50%, -50%);
-  width: 100vmin;
+  width: 80vmin;
 
 }
 .animated-title > div {
@@ -212,7 +212,7 @@ nav .dropdown-toggle::after {
   width: 100%;
 }
 .animated-title > div div {
-  font-size: 17vmin;
+  font-size: 14vmin;
   position: absolute;
 }
 .animated-title > div div span {
@@ -283,3 +283,45 @@ nav .dropdown-toggle::after {
   }
 
   
+
+  #buttonscroll a {
+    padding-top: 60px;
+  }
+  #buttonscroll a span {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: -12px;
+    border-left: 15px solid #F44336 ;
+    border-bottom: 15px solid #F44336;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: X 2s infinite;
+    animation: X 2s infinite;
+    box-sizing: border-box;
+  }
+  
+  @-webkit-keyframes X {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+  @keyframes X {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  }

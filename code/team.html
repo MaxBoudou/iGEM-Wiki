@@ -23,24 +23,93 @@
 
 <body>
 	
-<div id="wrapper">
-   	
-	<div data-include="navbar"></div>
-
-  <div class="team">
-      <h1 data-shadow='TEAM'>TEAM</h1>
+  <div class="top-page" style="background-color:#F2E7DC; border-radius: 50px 50px 50px 50px; height:70%; margin: 1% 1% 0% 1%; padding:1% 0 5% 0;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+          <img src="img/Logo_IONIS.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+     </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Team
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="team.html">Team members</a>
+                       <a class="dropdown-item" href="#">Collaborations</a>
+                       <a class="dropdown-item" href="#">Achievements</a>
+                       <a class="dropdown-item" href="#">Sponsors</a>
+                   </div>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Project
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="#">Description</a>
+                       <a class="dropdown-item" href="#">Design</a>
+                       <a class="dropdown-item" href="#">Parts</a>
+                       <a class="dropdown-item" href="#">Model</a>
+                       <a class="dropdown-item" href="#">Demonstrate</a>
+                   </div>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                       Lab
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="#">Lab book</a>
+                       <a class="dropdown-item" href="#">Experiments</a>
+                       <a class="dropdown-item" href="#">Results</a>
+                       <a class="dropdown-item" href="#">Characterization</a>
+                       <a class="dropdown-item" href="#">Improve</a>
+                   </div>
+               </li>
+               <li class="nav-item"><a class="nav-link" href="#">Safety</a></li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Parts
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="#">Part overview</a>
+                       <a class="dropdown-item" href="#">Main parts</a>
+                       <a class="dropdown-item" href="#">Improve?</a>
+                   </div>
+               </li>
+               <li class="nav-item"><a class="nav-link" href="#">Software</a></li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Human practices
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="#">Integrated Human Practices</a>
+                       <a class="dropdown-item" href="#">Education and Engagement</a>
+                   </div>
+               </li>
+               <li class="nav-item"><a class="nav-link" href="#">Judging Form</a></li>
+         </ul>
+      </div>
+  </nav>
+    <div class="team">
+        <figure style="margin:auto; padding:5%; text-align: center;">
+          <img  class="animate__animated animate__fadeInRight animate__delay-2s" style="width:60%; display:inline-block;--animate-duration:1s;" src="SVG/team.svg">
+        </figure>
+        <section id="buttonscroll" class="demo">
+          <a href="#"><span style="left:50%; top:65%;"></span></a>
+        </section>
+      </div>         
   </div>
-	<!--   //////////  CAROUSEL  /////////// -->
-  <div class="logo" style="width:100%; background-color:white; border-radius: 0 0 50px 50px; height: 1000px;">
-   
-  </div>
-	<!-- carousel code -->
-  
-  <br><br><br><br><br>
-  <div id="upper-footer" class="row">
 
-  	<div class="col-md-4" style="color: #292927;">
-      <div class="card" style="width:400px; height:400px; background-color: rgba(253, 253, 253, 0.9); border-radius: 50px;">
+  <div class="middle-page" style="margin: 5% 1% 0% 1%; height: 1340px;">
+    
+  </div>
+
+  <div class="end-page">
+  	<div class="col-md-4" style="color:#292927;">
+      <div class="card" style="width:100%; background-color: rgba(253,253,253, 0.9); border-radius: 50px;">
            <div class="card-body">
              <h5 class="card-title">Igem Ionis</h5>
   		       <p class="card-text">
@@ -50,11 +119,28 @@
              <a class="link" href="https://igemionis.com/equipe-igem-ionis-2020/">Read more...</a></p>
       <p><i class="fas fa-map-marker-alt"></i> Location: 66 Rue Guy Môquet, 94800<br> Villejuif, France</p>
       <p><i class="fas fa-envelope"></i> email: igem.ionis@gmail.com</p>
+      <ul class="nav">
+                  <li class="nav-item">
+                      <a href="https://www.facebook.com/ionisigem" class="nav-link">
+                        <i class="fab fa-facebook fa-2x" style="color:#2196F3"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="https://www.instagram.com/igem.ionis/?hl=fr" class="nav-link">     
+                        <i class="fab fa-instagram fa-2x" style="color:#FF5722"></i>      
+                      </a>
+                </li>
+                <li class="nav-item">
+                     <a href="https://www.linkedin.com/company/igem-ionis/" class="nav-link">
+                        <i class="fab fa-linkedin fa-2x" style="color:#00BCD4;"></i>
+                     </a>
+                </li>
+              </ul>
   	</div>
   </div>
 </div>
-  	<div class="col-md-8" style="color: #292927;">
-      <div class="card" style="width:900px; background-color: rgba(253, 253, 253, 0.9); border-radius: 50px;">
+  	<div class="col-md-8" style="color:#292927;">
+      <div class="card" style="width:100%; background-color: rgba(253,253,253, 0.9); border-radius: 50px;">
   		<div class="card-body">
       <h5 class="card-title">Sponsors</h5>
   		<div>
@@ -73,9 +159,5 @@
   	
   </div>
 
-
-
-
-</div>
 
 </body>

@@ -74,3 +74,4 @@ $(document).ready(function(){
     $(".end-page").css({"background-position": traX + "%" + traY + "%"});
   });
 });
+
