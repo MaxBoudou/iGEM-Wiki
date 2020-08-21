@@ -23,8 +23,45 @@ html, body{
   margin:0;
   padding:0;
  
-  scroll-behavior: smooth;
 }
+
+
+.top-page{
+  background-color:#F2E7DC; 
+  border-radius: 50px 50px 50px 50px; 
+  margin: 1% 1% 0% 1%; 
+  padding:1% 0 3% 0; 
+
+}
+
+.logo {
+  width: 90%;
+  height: 80%;
+  display: inline-block;
+  --animate-duration:4s;
+}
+
+.handle{
+  height: 30%;
+  margin-left: 2%;
+  padding:2%;
+  --animate-duration:2s;
+  --animation-delay: 20s;
+}
+
+.antibio{
+  height: 30%;
+  margin-left: 2%;
+  padding:2%;
+  --animate-duration:2s;
+ }
+ .care{
+  height: 20%;
+  margin-left: 2%;
+  padding:2%;
+  --animate-duration:2s;
+ }
+
 
 
 nav {
@@ -73,6 +110,9 @@ nav {
 nav .dropdown-toggle::after {
   
 }
+
+
+
 
 .link{
   text-decoration: none;
@@ -185,67 +225,7 @@ nav .dropdown-toggle::after {
 
 
 
-@keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
-@keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
-.animated-title {
-  color:#292927;
-  font-family: RalewaySemiBold;
-  height: 90vmin;
-  position: absolute;
-  left:35vmin;
-  top:10vmin;
-  transform: translate(-50%, -50%);
-  width: 80vmin;
 
-}
-.animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-.animated-title > div div {
-  font-size: 14vmin;
-  position: absolute;
-}
-.animated-title > div div span {
-  display:block;
-  
-}
-.animated-title > div.text-top {
-  border-bottom: 1vmin solid #292927;
-  width: 90%;
- }
-
-.animated-title > div.text-top div {
-  animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  bottom:0;
-  transform: translate(0, 100%);
-}
-.animated-title > div.text-top div span:first-child {
-  color: #F44336;
-  font-size: 11vmin;
-  margin-bottom: -40px;
-}
-.animated-title > div.text-bottom {
-  bottom: 0;
-}
-.animated-title > div.text-bottom div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top:0;
-  transform: translate(0, -100%);
-}
 
   #buttonBac{
     text-decoration:none;  
@@ -289,8 +269,8 @@ nav .dropdown-toggle::after {
   }
   #buttonscroll a span {
     position: absolute;
-    top: 100%;
-    left: 100%;
+    top: 90%;
+    left: 50%;
     width: 50px;
     height: 50px;
     margin-left: -12px;
