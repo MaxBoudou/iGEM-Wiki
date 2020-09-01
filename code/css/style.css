@@ -27,79 +27,74 @@ html, body{
 
 
 .top-page{
-  background-color:#F2E7DC; 
-  border-radius: 50px 50px 50px 50px; 
-  margin: 1% 1% 0% 1%; 
+  background-color:#008E8E; 
+  border-radius: 0px 0px 50px 50px;  
   padding:1% 0 3% 0; 
+  height: 100%;
 
 }
 
 .logo {
-  width: 90%;
-  height: 80%;
-  display: inline-block;
-  --animate-duration:4s;
+  margin-top:5%;
+  height: 90%;
+  width: 50%;
 }
 
 .handle{
-  height: 30%;
-  margin-left: 2%;
+  height: 40%;
   padding:2%;
+  margin-left: 6%;
   --animate-duration:2s;
-  --animation-delay: 20s;
 }
 
 .antibio{
   height: 30%;
-  margin-left: 2%;
   padding:2%;
+  margin-left: 6%;
   --animate-duration:2s;
  }
  .care{
-  height: 20%;
-  margin-left: 2%;
+  height: 30%;
   padding:2%;
+  margin-left: 6%;
+  
   --animate-duration:2s;
  }
 
 
 
-nav {
-  display: block;
-  z-index:900;
+.navbar {
+  background-color:#008E8E;
+  display: inline-flex;
   font-family: RalewayMedium;
   margin:0% 2% 0% 2%;
-  padding-top: 10%;
-}
-
-.navbar {
-  background-color:#F2E7DC;
-
 }
 
 .navbar-brand img {
-  width: 20%;
+  width: 30%;
   height: 10%;
 }
 
 .navbar .collapse .navbar-nav .nav-item .dropdown-menu>a:hover{
-  background-color: rgba(253,253,253,0.50);
+  color: #F44336;
+  background-color: transparent;
+  
 }
 .navbar .collapse .navbar-nav .nav-item .dropdown-menu{
   background-color:#292927;
   margin-top: 0;
+  border-radius: 20px;
 }
 
 .navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
-  font-size: 15px;
+  font-size: 1.5em;
   color: white;
 
 }
 
  .navbar .collapse .navbar-nav .nav-item .nav-link{
-  font-size: 20px;
-  margin:5px;
-  color:#292927;
+  font-size: 1.6em;
+  margin:10px;
 
 }
 
@@ -124,66 +119,9 @@ nav .dropdown-toggle::after {
   color: white;
 }
 
-.footer{
-  background-color:#292927;
-}
-
-.footer .nav-link:hover {
-  opacity: 0.5;
-}
-/*# sourceMappingURL=style.css.map */
 
 
-/*  -------- Index Carousel ------- */
 
-.carousel {
-  height:700px;
-
-}
-
-
-.carousel-indicators {
-    bottom: 0;
-}
-.carousel-control.right,
-.carousel-control.left {
-    background-image: none;
-}
-
-.carousel-item {
-    min-height:600px; 
-    height: 100%;
-    width:100%;   
-}
-
-.carousel-caption h3 {
-    padding: 0.2em;
-}
-.carousel .icon-container {
-    display: inline-block;
-    font-size: 25px;
-    line-height: 25px;
-    padding: 1em;
-    text-align: center;
-    border-radius: 50%;
-}
-.carousel-caption button {
-    margin-top: 1em; 
-}
-
-/* Animation delays */
-.carousel-caption h3:first-child {
-    animation-delay: 1s;
-}
-.carousel-caption h3:nth-child(2) {
-    animation-delay: 2s;
-}
-.carousel-caption button {
-    animation-delay: 3s;
-}
-
-
-/* ------ Footer ------- */
 
 .end-page {
   display: flex;
@@ -193,8 +131,7 @@ nav .dropdown-toggle::after {
   background-image: url("BG-TITRE.jpg");
   background-size: 50% auto;
   background-repeat: repeat;
-  border-radius: 50px 50px 50px 50px; 
-  margin: 1% 1% 1% 1%;
+  border-radius: 50px 50px 0px 0px; 
   border: 1px solid transparent;
 
 }
@@ -243,6 +180,14 @@ nav .dropdown-toggle::after {
     color:#F2E7DC;
   }
 
+  #buttonTeam {
+    text-decoration:none; 
+    text-align: center; 
+    font-size:7em; 
+    font-family: 'RalewaySemiBold',sans-serif; 
+    color:#02C39A;
+  }
+
   .containerGG:hover{
     
     background-color: #F2E7DC ;
@@ -262,46 +207,27 @@ nav .dropdown-toggle::after {
   
   }
 
-  
+ .card .img1{
+  display: none;
+ }
 
-  #buttonscroll a {
-    padding-top: 60px;
-  }
-  #buttonscroll a span {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    margin-left: -12px;
-    border-left: 15px solid #F44336 ;
-    border-bottom: 15px solid #F44336;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: X 2s infinite;
-    animation: X 2s infinite;
-    box-sizing: border-box;
-  }
-  
-  @-webkit-keyframes X {
-    0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-    }
-    20% {
-      -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-    }
-    40% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-    }
-  }
-  @keyframes X {
-    0% {
-      transform: rotate(-45deg) translate(0, 0);
-    }
-    20% {
-      transform: rotate(-45deg) translate(-10px, 10px);
-    }
-    40% {
-      transform: rotate(-45deg) translate(0, 0);
-    }
-  }
+ .card:hover .img1 {
+  display: inline;
+  object-position: center;
+}
+ .card:hover .img{
+  display: none;
+ }
+
+ .handle:hover{
+  animation: bounce;
+  animation-duration: 1s;
+ }
+ .care:hover{
+  animation: bounce;
+  animation-duration: 1s;
+ }
+ .antibio:hover{
+  animation: bounce;
+  animation-duration: 1s;
+ }
